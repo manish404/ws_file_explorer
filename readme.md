@@ -1,4 +1,4 @@
-## File Explorer 
+## WS File Explorer 
 `python-flask`
 * can serve all type of file
 * Supported files
@@ -7,25 +7,26 @@
 	* AV: mp3, mp4 `todo`
 	* PDF : pdf
 	* Office : word, excel `todo`
+* Accessible inside home network (optional)
 
 `Have a look`
 ![Overview](show.jpg)
 
 ### Run
 * install requirements `pip install -r requirements.txt`
-* then run to see usage,
+* then see usage,
 ```cmd
-	python main.py --help
+python main.py --help
 ```
 
 #### Used
 * `highlight.js` for syntax highlighting & theme
 * `python-flask` for backend
-	* argparse - for handling commandline arguments
-	* os - for file handling
-	* threading - for parallel processing
+	* `argparse` - for handling commandline arguments
+	* `os` - for file handling
+	* `threading` - for parallel processing
 
-### TODOs
+#### TODOs
 * file buffering
 * can see raw & parsed `md` file
 * accessible to any device in a home network
