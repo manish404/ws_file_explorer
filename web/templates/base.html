@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Server</title>
+    <!-- 
+        ```
+            highlight.js : Highlighting code and dark-theme
+            - Languages
+                Used : 43 
+                [ console: hljs.listLanguages(); ]
+            - Themes
+                Used : 1
+        ```
+        ``` marked.js : Parsing Markdown ```
+    -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = '/css/atom-one-dark.min.css') }}">
+    <script src="{{ url_for('static', filename = '/js/highlight.min.js') }}"></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = '/css/base.css') }}">
+    {%block style%}
+    {%endblock%}
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h2>File Explorer</h2>
+        </div>
+        <div>
+            {%block path%}
+            {%endblock%}
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        {%block body%}
+        {%endblock%}
+    </main>
+
+    {%block script%}
+    {%endblock%}
+
+    <script>
+        // console.log(hljs.listLanguages());
+    </script>
+    <script src="{{ url_for('static', filename = '/js/handler.js') }}"></script>
+    <script src="{{ url_for('static', filename = '/js/base.js') }}"></script>
+
+</body>
+
+</html>

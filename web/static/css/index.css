@@ -1,0 +1,23 @@
+ul {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+li {
+    list-style-type: none;
+    margin: .2rem 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.link svg {
+    margin-right: .5rem;
+    fill: #d38015;
+}
+
+.scroll {
+    overflow: auto;
+}

@@ -1,0 +1,6 @@
+temp/
+web/static/temp/
+.vscode/
+__pycache__/
+utils/__pycache__/
+vir_env/

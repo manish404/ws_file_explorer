@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+
+{% block style %}
+<!--  -->
+{% endblock %}
+
+{%block path%}
+<h3>
+    [ {{FILENAME}} ]
+</h3>
+{%endblock%}
+
+{% block body %}
+
+<div id="no" hidden>
+    {{content}}
+</div>
+<div id="md">
+</div>
+
+{% endblock %}
+
+
+{% block script %}
+<!-- parsing markdown here -->
+{% endblock %}

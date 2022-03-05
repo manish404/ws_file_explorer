@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+
+{% block style %}
+<style>
+    code {
+        font-size: 0.9rem;
+        overflow: auto !important;
+        height: 87vh;
+        /* height must be Hard-Coded : "Don't Change" */
+    }
+</style>
+{% endblock %}
+
+{%block path%}
+<h3 id="">
+    [ {{FILENAME}} ]
+</h3>
+{%endblock%}
+
+{% block body %}
+<!-- Make element with CONTENT inline -->
+<pre><code>{{ content }}</code></pre>
+{% endblock %}
+
+{%block script %}
+<script src="{{url_for('static', filename='js/highlight.js')}}"></script>
+{%endblock%}

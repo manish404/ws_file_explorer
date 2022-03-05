@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+
+{% block style %}
+<!--  -->
+{% endblock %}
+
+{%block path%}
+<h3>
+    [ {{FILENAME}} ]
+</h3>
+{%endblock%}
+
+{% block body %}
+
+{% if PATH %}
+<embed style="position:absolute; left: 0; top: 10;" width="100%" height="90%" src="{{PATH}}" type="application/pdf">
+{% endif %}
+
+{% endblock %}
+
+
+{% block script %}
+<!--  -->
+{% endblock %}
